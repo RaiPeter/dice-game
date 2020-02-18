@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="diceStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="players">
+            <div class="player1" id="player1">
+                <div class="player1Name">
+                    <span>Player 1</span>&nbsp;<label id="currentPlayer1"></label>
+                </div>
+                <div class="currentScore1">
+                    <span id="currentScore1">0</span>
+                </div>
+                <div class="changeScore1">
+                    <span>Current Value</span>
+                    <span id="changeScore1">0</span>
+                </div>
+             </div>
+             <div class="controls">
+                <div class="newGame" id="newGame">
+                    <span>New Game</span>
+                </div>
+                <div class="winner" >
+                    <span id="winner">WINNER</span>
+                </div>
+                <div  id="roll" class="rollDice">
+                    <span>Roll Dice</span>
+                </div>
+             </div>
+
+            <div class="player2" id="player2">
+                <div class="player2Name">
+                    <span>Player 2</span>&nbsp;<span id="currentPlayer2"></span>
+                </div>
+                <div class="currentScore2" >
+                    <span id="currentScore2">0</span>
+                </div>
+                <div class="changeScore2">
+                    <span>Current Value</span>
+                    <span id="changeScore2">0</span>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+<script src="dice.js"></script>
+</html>

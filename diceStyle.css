@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+  display: flex;
+  height: 550px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.players{
+    display: flex;
+  justify-content: center;
+height: 400px;
+width: 100%;
+}
+.player1{
+    height: 600px;
+    width:550px;
+    background-color: rgba(255, 0, 0, 0.541);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.player2{
+    width:550px;
+height: 600px;
+background-color: rgba(0, 0, 255, 0.568);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+}
+#currentPlayer1,#currentPlayer2{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    display: none;
+}
+
+.currentScore1,.currentScore2{
+    top: -80px;
+    position: relative;
+    font-size: 100px;
+    text-shadow: 5px 5px 10px black;
+}
+.player1Name,.player2Name{
+    font-size: 50px;
+}
+.changeScore1,.changeScore2{
+    font-size: 30px;
+    height: 100px;
+    width: 200px;
+    background-color: rgba(127, 152, 156, 0.733);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.controls{
+    height: 600px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.newGame{
+    position: relative;
+    top: -65px;
+    z-index: 5;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    background-color: rgba(236, 236, 74, 0.842);
+}
+.rollDice{
+    font-size: 30px;
+    position: relative;
+    top: -50px;
+    z-index: 5;
+    background-color: rgba(0, 255, 13, 0.76);
+    padding: 4px 20px;
+    border-radius: 20px;
+}
+#winner{
+    display: none;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    font-size: 50px;
+    z-index: 5;
+    padding: 5px 20px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    opacity: 80%;
+    box-shadow: 0px 0px 20px black;
+    background-color: rgb(0, 255, 98);
+    
+}
